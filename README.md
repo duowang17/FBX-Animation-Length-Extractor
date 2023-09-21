@@ -18,7 +18,7 @@ This utility extracts the length of animations from FBX files, processing all FB
      ```
    - Setup for VS Code:
      - After installation, ensure you've set up the FBX SDK's include and library paths in VS Code.
-     - Open `.vscode/c_cpp_properties.json` (create if it doesn't exist) and add or modify the include path:
+     - Open `.vscode/c_cpp_properties.json` (create if it doesn't exist using `Command Palette`: `Ctrl+Shift+P` -> `Edit Configuration`) and add or modify the include path:
        ```json
        {
            "configurations": [
