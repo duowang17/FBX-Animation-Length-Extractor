@@ -35,7 +35,10 @@ This utility extracts the length of animations from FBX files, processing all FB
        }
        ```
      - If you're using a `tasks.json` or `launch.json` for building/debugging, make sure you've set the library paths correctly there, linking against the libraries in `/path/to/FBXSDK/lib`.
+   - Copy the `libfbxsdk.dylib` File:
+     After compiling the project, you'll notice that running the executable requires the `libfbxsdk.dylib` to be in the same directory (or a directory in your system's library path).
 
+   
 2. **json.hpp**: 
    - Description:
      This is a header-only library for handling JSON. It is included in the `include/` directory of this project.
