@@ -67,7 +67,7 @@ cd fbx-animation-length-extractor
 
 2. **Compile the utility:**
 ```bash
-clang++ -std=c++11 src/fbx.cpp \
+clang++ -std=c++11 src/fbx_anim_extractor.cpp \
 -I "<path_to_FBXSDK>/include" \
 -I ./include \
 "<path_to_FBXSDK>/lib/clang/release/libfbxsdk.dylib" \
