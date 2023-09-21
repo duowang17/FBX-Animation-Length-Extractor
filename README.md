@@ -12,10 +12,30 @@ This utility extracts the length of animations from FBX files, processing all FB
 1. **FBX SDK**: 
    - Description:
      This project relies on the Autodesk FBX SDK. You need to download and install it separately.
-   - Source:
+   - Installation:
      ```markdown
      [Autodesk FBX SDK](https://www.autodesk.com/developer-network/platform-technologies/fbx-sdk-2020-0)
      ```
+   - Setup for VS Code:
+     - After installation, ensure you've set up the FBX SDK's include and library paths in VS Code.
+     - Open `.vscode/c_cpp_properties.json` (create if it doesn't exist) and add or modify the include path:
+       ```json
+       {
+           "configurations": [
+               {
+                   "name": "Your Configuration Name (e.g., Mac, Win32, etc.)",
+                   "includePath": [
+                       "${workspaceFolder}/**",
+                       "/path/to/FBXSDK/include"
+                   ],
+                   // other settings...
+               }
+           ],
+           "version": 4
+       }
+       ```
+     - If you're using a `tasks.json` or `launch.json` for building/debugging, make sure you've set the library paths correctly there, linking against the libraries in `/path/to/FBXSDK/lib`.
+
 2. **json.hpp**: 
    - Description:
      This is a header-only library for handling JSON. It is included in the `include/` directory of this project.
